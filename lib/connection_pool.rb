@@ -72,7 +72,7 @@ class ConnectionPool
     nil
   end
 
-  class Wrapper < ::BasicObject
+  class Wrapper
     METHODS = [:with]
 
     def initialize(options = {}, &block)
@@ -97,4 +97,4 @@ class ConnectionPool
   end
 end
 
-require_relative 'connection_pool/timed_stack'
+require 'connection_pool/timed_stack'
