@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), 'version')
+require 'connection_pool/version'
 # Generic connection pool class for e.g. sharing a limited number of network connections
 # among many threads.  Note: Connections are eager created.
 #
